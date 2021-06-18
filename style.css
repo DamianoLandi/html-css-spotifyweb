@@ -1,0 +1,58 @@
+.container-fluid{
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+/* Main */
+
+nav{
+    min-width: 200px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    height: calc(100vh - 100px);
+}
+
+main{  
+    width: calc(100% - 200px);
+    background-color: rgb(22,24,36);
+    margin-left: 200px;
+}
+
+@media screen and (max-width: 575px) {
+    nav{
+        width: 70px;
+        min-width: 70px;
+    }
+
+    main{
+        width: calc(100% - 70px);
+        margin-left: 70px;
+    }
+}
+
+main .main-header{
+    height: 100px;
+    min-height: 100px;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+}
+
+main .main-content{
+    padding-top: 150px;
+    color: white;
+    flex-direction: column;
+}
+
+/* Footer */
+
+footer{
+    height: 100px;
+    min-height: 100px;
+    width: 100%;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+}
