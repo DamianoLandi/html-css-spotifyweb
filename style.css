@@ -13,6 +13,12 @@
 
 .text-gray:hover{
     color: white;
+    cursor: pointer;
+}
+
+.scale:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 /* Nav */
@@ -124,7 +130,7 @@ nav .profile .row{
     visibility: hidden;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 550px) {
     nav{
         width: 70px;
         min-width: 70px;
@@ -134,7 +140,7 @@ nav .profile .row{
         margin-top: 20px;
     }
 
-    img{
+    nav img{
         margin-bottom: 15px;
     }
 
@@ -175,7 +181,7 @@ main{
     margin-left: 200px;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 550px) {
     main{
         width: calc(100% - 70px);
         margin-left: 70px;
@@ -194,31 +200,31 @@ main .main-header{
     text-transform: uppercase;
     display: flex;
     justify-content: flex-end;
+    z-index: 2;
 }
 
 .main-header p{
     text-align: center;
-    height: 60px;
-    width: 300px;
+    height: 30px;
+    width: 130px;
     border: 2px solid white;
     border-radius: 35px;
-    line-height: 60px;
-    margin-top: 20px;
+    line-height: 30px;
+    margin-top: 35px;
     margin-right: 3%;
+    font-size: 10px;
 }
 
-.main-header p:hover{
-    transform: scale(1.1);
-}
-
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 550px) {
     main .main-header{
         width: calc(100vw - 70px);
     }
 }
 
+/* Main Content */
+
 main .main-content{
-    padding-top: 150px;
+    padding-top: 120px;
     color: white;
     flex-direction: column;
 }
@@ -227,9 +233,180 @@ main .main-content{
 
 footer{
     height: 100px;
+    max-height: 100px;
     min-height: 100px;
     width: 100%;
-    background-color: gray;
+    background-color: rgb(40, 40, 40);
     position: absolute;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}   
+
+.col{
+    height: 100%;
+    flex-basis: 12%;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.col:nth-of-type(1){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.col:nth-of-type(1) img{
+    height: 40px;
+}
+
+.col:nth-of-type(1) .footer-text{
+   flex-basis: 30%;
+   font-size: 10px;
+   color: white;
+}
+
+.col:nth-of-type(1) .footer-text span:hover{
+    text-decoration: underline;
+}
+
+.left-footer-icons{
+    height: 100%;
+    width: 15%;
+    line-height: 100px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.col:nth-of-type(2){
+    text-align: center;
+    color: white;
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col:nth-of-type(2) .row:nth-of-type(1){
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    flex-wrap: nowrap;
+}
+
+.col:nth-of-type(2) .row:nth-of-type(1) i:hover{
+    cursor: pointer;
+}
+
+.fa-play-circle{
+    font-size: 30px;
+}
+
+.fa-undo{
+    transform: scaleX(-1);
+}
+
+.col:nth-of-type(2) .row:nth-of-type(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 12px;
+}
+
+.row:nth-of-type(2) .bar{
+    display: inline-block;
+    width: 80%;
+    height: 5px;
+    background-color: gray;
+}
+
+.row:nth-of-type(2) .time{
+    height: 100%;
+    width: 20%;
+    background-color: lightgray;
+    position: relative;
+}
+
+.row:nth-of-type(2) .circle{
+    height: 11px;
+    width: 11px;
+    background-color: #fff;
+    position: absolute;
+    right: -5px;
+    bottom: -3px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.row:nth-of-type(2) .bar:hover{
+    cursor: pointer;
+}
+
+.row:nth-of-type(2) .bar:hover .time{
+    background-color: lime;
+}
+
+.row:nth-of-type(2) .bar:hover .circle{
+    opacity: 1;
+}
+
+.col:last-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col:last-of-type i{
+    flex-basis: 15%;
+}
+
+.col:last-of-type .col:last-of-type{
+    flex-grow: 1;
+}
+
+.row:last-of-type .bar{
+    display: inline-block;
+    width: 80%;
+    height: 5px;
+    background-color: gray;
+}
+
+.row:last-of-type .time{
+    height: 100%;
+    width: 20%;
+    background-color: lightgray;
+    position: relative;
+}
+
+.row:last-of-type .circle{
+    height: 11px;
+    width: 11px;
+    background-color: #fff;
+    position: absolute;
+    right: -5px;
+    bottom: -3px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.row:last-of-type .bar:hover{
+    cursor: pointer;
+}
+
+.row:last-of-type .bar:hover .time{
+    background-color: lime;
+}
+
+.row:last-of-type .bar:hover .circle{
+    opacity: 1;
 }
