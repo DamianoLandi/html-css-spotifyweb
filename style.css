@@ -2,9 +2,22 @@
     height: 100vh;
     max-height: 100vh;
     overflow-y: scroll;
+    font-family: "montserrat", sans-serif;
 }
 
-/* Main */
+/* Utils */
+
+.text-gray{
+    color:lightgray;
+}
+
+.text-gray:hover{
+    color: white;
+}
+
+/* MAIN */
+
+/* Nav */
 
 nav{
     min-width: 200px;
@@ -13,12 +26,104 @@ nav{
     color: white;
     position: fixed;
     height: calc(100vh - 100px);
+    line-height: 40px;
+    font-size: 13px;
 }
 
-main{  
-    width: calc(100% - 200px);
-    background-color: rgb(22,24,36);
-    margin-left: 200px;
+nav .row{
+    padding-left: 15px;
+}
+
+#logo{
+    height: 40px;
+    margin: 15px 0;
+}
+
+#logo-small{
+    height: 30px;
+}
+
+nav .gray-img{
+    width: 30px;
+    vertical-align: middle;
+}
+
+nav .fa-plus-square{
+    font-size: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+nav h2{
+    font-weight: 900;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav > .row:nth-of-type(2){
+    border-left: 2px solid lime;
+}
+
+nav .gray-img{
+    filter: invert(0.1);
+}
+
+nav .row:hover > .gray-img{
+    filter: invert(0);
+}
+
+nav .profile{
+    width: 100%;
+    background-color: black;
+    padding: 5px 5px;
+    position: fixed;
+    width: 200px;
+    bottom: 100px;
+}
+
+nav .profile .row{
+    padding-left: 0;
+}
+
+.profile #arrow{
+    height: 15px;
+    margin-top: 14px;
+}
+
+.profile hr{
+    width: 90%;
+    margin: auto;
+}
+
+.profile .profile-pic{
+    background-color: gray;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.profile .profile-pic img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.profile .name{
+    font-weight: 900;
+    font-size: 15px;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+
+.appear{
+    visibility: hidden;
 }
 
 @media screen and (max-width: 575px) {
@@ -27,6 +132,37 @@ main{
         min-width: 70px;
     }
 
+    #logo-small{
+        margin-top: 20px;
+    }
+
+    img{
+        margin-bottom: 15px;
+    }
+
+    .disappear{
+        display: none;
+    }
+
+    .appear{
+        visibility: visible;
+    }
+
+    nav .row:nth-of-type(2){
+        border-left: none;
+    }
+}
+
+
+/* Main */
+
+main{  
+    width: calc(100% - 200px);
+    background-color: rgb(22,24,36);
+    margin-left: 200px;
+}
+
+@media screen and (max-width: 575px) {
     main{
         width: calc(100% - 70px);
         margin-left: 70px;

@@ -4,15 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./framework.css">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Spotify</title>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
             <nav>
-                <p>ciao</p>
+                <div class="row">
+                    <img class="disappear" id="logo" src="./img/logo.svg" alt="">
+                    <img class="appear" id="logo-small" src="./img/logo-small.svg" alt="">
+                </div>
+                <div class="row text-gray">
+                    <img class="gray-img" src="./img/home.svg" alt="Home">
+                    <span class="disappear"> Home</span>
+                </div>
+                <div class="row text-gray">
+                    <img class="gray-img" src="./img/search.svg" alt="Search">
+                    <span class="disappear"> Cerca</span>
+                </div>
+                <div class="row text-gray">
+                    <img class="gray-img" src="./img/libreria.svg" alt="Library">
+                    <span class="disappear">La tua libreria</span>
+                </div>
+                <div class="row disappear">
+                    <h2>Playlist</h2>
+                </div>
+                <div class="row text-gray disappear">
+                    <span><i class="fas fa-plus-square"></i></span>
+                    <span>Crea Playlist</span>
+                </div>
+                <div class="row disappear">
+                    <ul>
+                        <li class="text-gray">Nuova Playlist</li>
+                        <li class="text-gray">Nuova Playlist</li>
+                        <li class="text-gray">Nuova Playlist</li>
+                        <li class="text-gray">Nuova Playlist</li>
+                        <li class="text-gray">Nuova Playlist</li>
+                        <li class="text-gray">Nuova Playlist</li>
+                        <li class="text-gray">Nuova Playlist</li>
+                    </ul>
+                </div>
+                <div class="profile">
+                    <div class="row text-gray">
+                        <img id="arrow" class="gray-img" src="./img/download.svg" alt="Download">
+                        <!--<span class="arrow">&#8595; </span> -->
+                        <span> Installa app</span>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="profile-pic">
+                            <img src="./img/profile.svg" alt="Profile">
+                        </div>
+                        <span class="name">John Doe</span>
+                    </div>
+                </div>
             </nav>
             <main> 
                 <div class="row main-header"></div>
