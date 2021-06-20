@@ -151,6 +151,21 @@ nav .profile .row{
     nav .row:nth-of-type(2){
         border-left: none;
     }
+
+    nav .profile{
+        width: 70px;
+    }
+
+    #arrow{
+        margin-left: 12px;
+    }
+}
+
+@media screen and (max-height: 550px) {
+    nav .profile{
+        top: 355px;
+        height: 96px;
+    }
 }
 
 
