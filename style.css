@@ -237,14 +237,15 @@ main .main-content{
     list-style-type: none;
     text-transform: uppercase;
     display: flex;
-    justify-content: space-around;
-    width: 50%;
+    justify-content: center;
+    max-width: 100%;
     margin: auto;
     flex-wrap: wrap;
 }
 
 .main-content-header ul li{
     font-size: 10px;
+    margin: 0 20px;
 }
 
 .main-content-header ul li:first-of-type hr{
@@ -270,7 +271,7 @@ footer{
 
 .col{
     height: 100%;
-    flex-basis: 12%;
+    flex-basis: 25%;
     display: flex;
     flex-shrink: 0;
 }
@@ -392,6 +393,7 @@ footer{
 
 .col:last-of-type i{
     flex-basis: 15%;
+    padding: 0 5px;
 }
 
 .col:last-of-type .col:last-of-type{
