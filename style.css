@@ -8,7 +8,7 @@
 /* Utils */
 
 .text-gray{
-    color:lightgray;
+    color:rgb(113,113,113);
 }
 
 .text-gray:hover{
@@ -275,7 +275,7 @@ main .main-content{
 }
 
 .main-content h4{
-    color: lightgray;
+    color: rgb(113,113,113);
     font-size: 15px;
     margin: 15px 0;
     padding-left: 0.5%;
@@ -322,7 +322,7 @@ main .main-content{
 }
 
 .main-content h5{
-    color: lightgray;
+    color: rgb(113,113,113);
 }
 
 @media screen and (max-width: 991px) {
@@ -448,7 +448,7 @@ footer > .col:nth-of-type(2) .row:nth-of-type(2){
 .row:nth-of-type(2) .time{
     height: 100%;
     width: 20%;
-    background-color: lightgray;
+    background-color: rgb(113,113,113);
     position: relative;
 }
 
